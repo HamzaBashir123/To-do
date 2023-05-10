@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: linear-gradient(to right, #5F0A87 , #A4508B);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+.mainDiv{
+    height: fit-content;
+    width: 500px;
+    background-color: white;
+    margin-top: 200px;
+    border-radius: 10px;
+    padding: 25px;
+    
+}
+.message{
+    margin: 5px 0px;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    transition: 1s all;
+}
+.headingIcon{
+    
+    
+
+}
+.headingIcon:hover{
+    cursor: pointer;
+    scale: 0.9;
+}
+.headingIcon:active{
+    scale: 1;
+}
+/* Input Area */
+.inputArea{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: aliceblue ;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+
+}
+.hidden{
+    
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+
+}
+.addButton{
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: #ff5945;
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+/* Ui Area  */
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    /* border: 2px solid grey; */
+    text-align: left;
+    width: 400px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+    border: 2px solid green;
+
+    
+}
+.liDivSet{
+    position: relative;
+    display: flex;
+}
+
+.deleteImg{
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    top: 12px;
+    right: 0;
+}
+
+
+.listicon{
+    
+    position: absolute;
+    right: 35px;
+    
+    top: 12px;
+    z-index: 1;
+}
+
+ul li.checked{
+  color: #555 ;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(./images/checked.png);
+}
+
+.deleteAll{
+    /* border: 2px solid black; */
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+.deleteAlContent{
+    width: fit-content;
+    margin-bottom: 0px;
+    /* text-align: center; */
+    /* border: 2px solid green; */
+    
+    
+    
+    
+}
+.deleteAlContent:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.deleteAlContent{
+    
+    padding-top: 30px;
+  
+}
+
+.deleteAlContent:active{
+    scale: 1.1;
+    
+}
+
+
+.newli span:hover{
+    cursor: pointer;
+    background-color: #555;
+}

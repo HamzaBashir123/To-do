@@ -62,7 +62,7 @@ body{
     border: none;
     outline: none;
     padding: 16px 50px;
-    background: #ff5945;
+    background: green;
     color:#fff;
     font-size: 16px;
     cursor: pointer;
@@ -83,7 +83,7 @@ input{
     right: 0;
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 16px 48px;
     background: #ff5945;
     color:#fff;
     font-size: 16px;

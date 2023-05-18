@@ -11,15 +11,15 @@ body{
     display: flex;
     justify-content: center;
     
+    
 }
 .mainDiv{
     height: fit-content;
     width: 500px;
     background-color: white;
-    margin-top: 200px;
     border-radius: 10px;
     padding: 25px;
-    
+    margin-top: 5%;
 }
 .message{
     margin: 5px 0px;
@@ -28,11 +28,7 @@ body{
     visibility: hidden;
     transition: 1s all;
 }
-.headingIcon{
-    
-    
 
-}
 .headingIcon:hover{
     cursor: pointer;
     scale: 0.9;
@@ -189,3 +185,33 @@ ul li.checked::before{
     cursor: pointer;
     background-color: #555;
 }
+
+
+@media only screen and (max-width: 500px) {
+    .mainDiv{
+        width: 350px;
+        
+    }
+    .hidden{
+    
+        padding: 12px 38px;
+        font-size: 12px;
+    }
+
+    .addButton{
+      
+        padding: 12px 36px;
+        font-size: 12px;
+        
+    }
+    ul li{
+       
+        width: 250px;
+        font-size: 14px;
+    }
+    
+
+
+
+}
+

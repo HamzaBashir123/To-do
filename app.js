@@ -120,6 +120,8 @@ const Editfun = (uId1) => {
 
 const editProcess = () => {
   const indexNum = itemsArray.findIndex((item) => item.includes(editedUID));
+  
+
 
   itemsArray.splice(
     indexNum,
@@ -132,9 +134,9 @@ const editProcess = () => {
   listDIv.innerHTML = itemsArray.join("");
   localStorage.setItem("myList", JSON.stringify(itemsArray));
 
+  alertInfo("{" + textArea.value + "} Edit your Item", "darkgoldenrod");
   textArea.value = "";
 
-  alertInfo("{" + textArea.value + "} Edit your Item", "darkgoldenrod");
 
   EditButton.classList.remove("hidden");
   EditButton.innerHTML = "";

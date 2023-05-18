@@ -51,13 +51,12 @@ body{
 
 }
 .hidden{
-    
     position: absolute;
     right: 0;
     z-index: 1;
     border: none;
     outline: none;
-    padding: 16px 50px;
+    padding: 16px 48px;
     background: green;
     color:#fff;
     font-size: 16px;
@@ -194,13 +193,13 @@ ul li.checked::before{
     }
     .hidden{
     
-        padding: 12px 38px;
+        padding: 12px 36px;
         font-size: 12px;
     }
 
     .addButton{
       
-        padding: 12px 40px 12px 34px;
+        padding: 12px 36px;
         font-size: 12px;
         
     }
@@ -208,6 +207,7 @@ ul li.checked::before{
        
         width: 250px;
         font-size: 14px;
+        padding: 18px 8px 12px 50px;
     }
     
 

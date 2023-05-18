@@ -9,6 +9,8 @@ let editedUID = null;
 let itemsArray = JSON.parse(localStorage.getItem("myList")) || [];
 listDIv.innerHTML = itemsArray.join("");
 
+EditButton.style.visibility="hidden"
+
 //  Enter press funtion
 textArea.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
@@ -97,8 +99,8 @@ const Editfun = (uId1) => {
   alertInfo("Please edit your item ", "darkgoldenrod");
 
   editedUID = uId1;
-  EditButton.classList.add("hidden");
-  EditButton.innerHTML = "Edit";
+  EditButton.style.visibility="visible"
+  addButton.style.visibility="hidden"
 
   EditButton.addEventListener("click", editProcess);
   const myList = Array.from(listDIv.childNodes);
@@ -128,8 +130,8 @@ const editProcess = () => {
   textArea.value = "";
 
 
-  EditButton.classList.remove("hidden");
-  EditButton.innerHTML = "";
+  addButton.style.visibility="visible"
+  EditButton.style.visibility="hidden"
 };
 
 // Delete All funtion

@@ -38,9 +38,8 @@ const textClick = (uId1) => {
   for (i = 0; i < itemsArray.length; i++) {
     // console.log()
     if (itemsArray[i].indexOf(uId1) != -1) {
-      let innerText1 = listDIv.children[i].firstChild.innerHTML;
-
-      console.log(innerText1);
+      // listDIv.children[i].firstChild.innerText
+      let innerText1 = listDIv.children[i].children[0].innerHTML;
       // listDIv.childNodes[ i || (i+1)].firstChild.classList.toggle("checked");
       if (itemsArray[i].includes("checked")) {
         itemsArray.splice(
@@ -51,6 +50,7 @@ const textClick = (uId1) => {
             <span onclick="Editfun('${uId1}')" class="headingIcon listicon"><i class="fa-regular fa-pen-to-square"></i></span>
             <span onclick="deleteFun('${uId1}')"><img class="deleteImg headingIcon" src="./images/cross.png" alt=""></span> </div>`
         );
+        
         listDIv.innerHTML = itemsArray.join("");
         localStorage.setItem("myList", JSON.stringify(itemsArray));
       } else {
@@ -62,7 +62,7 @@ const textClick = (uId1) => {
             <span onclick="Editfun('${uId1}')" class="headingIcon listicon"><i class="fa-regular fa-pen-to-square"></i></span>
             <span onclick="deleteFun('${uId1}')"><img class="deleteImg headingIcon" src="./images/cross.png" alt=""></span> </div>`
         );
-
+        
         listDIv.innerHTML = itemsArray.join("");
         localStorage.setItem("myList", JSON.stringify(itemsArray));
       }

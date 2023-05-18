@@ -40,7 +40,6 @@ const textClick = (uId1) => {
     if (itemsArray[i].indexOf(uId1) != -1) {
       // listDIv.children[i].firstChild.innerText
       let innerText1 = listDIv.children[i].children[0].innerHTML;
-      // listDIv.childNodes[ i || (i+1)].firstChild.classList.toggle("checked");
       if (itemsArray[i].includes("checked")) {
         itemsArray.splice(
           i,
@@ -94,15 +93,6 @@ const deleteFun = (uId1) => {
 // Edti Fucntion List contetn copy to imput box
 
 const Editfun = (uId1) => {
-  // const newitemsArray = Array.from(listDIv.childNodes)
-  // var fillterDAta = newitemsArray.filter((item) => item.id === uId1 )
-  //        textArea.value   = fillterDAta[0].querySelector("li").innerHTML;
-  //        EditButton.classList.add("hidden")
-  //        EditButton.innerHTML = "Edit";
-  //        console.log(fillterDAta)
-
-  //        EditButton.addEventListener("click",()=> editProcess(uId1))
-  //        console.log(uId1)
 
   alertInfo("Please edit your item ", "darkgoldenrod");
 

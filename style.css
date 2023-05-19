@@ -71,7 +71,7 @@ input{
     background: transparent;
     padding: 10px;
     font-weight: 14px;
-    padding-right: 150px;
+    padding-right: 140px;
 
 }
 .addButton{
@@ -193,7 +193,7 @@ ul li.checked::before{
         
     }
     .hidden{
-    
+        
         padding: 12px 36px;
         font-size: 12px;
     }
@@ -205,12 +205,18 @@ ul li.checked::before{
         
     }
     ul li{
-       
+        
         width: 250px;
         font-size: 14px;
         padding: 18px 8px 12px 50px;
     }
+    input{
+        
+        padding-right: 110px;
+        
+        
     
+    }
 
 
 
